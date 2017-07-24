@@ -24,7 +24,7 @@ class WebformCompositeExample extends WebformCompositeBase {
   /**
    * {@inheritdoc}
    */
-  protected function getCompositeElements() {
+  public function getCompositeElements() {
     $elements = CompositeExample::getCompositeElements();
 
     return $elements;
@@ -33,7 +33,7 @@ class WebformCompositeExample extends WebformCompositeBase {
   /**
    * {@inheritdoc}
    */
-  protected function getInitializedCompositeElement(array &$element) {
+  public function getInitializedCompositeElement(array &$element) {
     $form_state = new FormState();
     $form_completed = [];
 
